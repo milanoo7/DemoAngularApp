@@ -23,7 +23,7 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'dist'
+    artifactName: drop
     testResultsFiles: '**/*'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     displayName: 'Publish Test Results'
