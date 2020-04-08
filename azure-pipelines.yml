@@ -24,6 +24,5 @@ steps:
 - task: PublishTestResults@2
   inputs:
     artifactName: drop
-    testResultsFiles: '**/*'
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     displayName: 'Publish Test Results'
