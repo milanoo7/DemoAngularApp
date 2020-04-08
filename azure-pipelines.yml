@@ -25,4 +25,5 @@ steps:
   inputs:
     testResultsFormat: 'dist'
     testResultsFiles: '**/*'
+    searchFolder: '$(System.DefaultWorkingDirectory)
     displayName: 'Publish Test Results'
