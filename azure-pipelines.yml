@@ -21,8 +21,9 @@ steps:
     ng build --prod 
   displayName: 'npm install and build'
 
-- task: PublishTestResults@2
+- task: PublishBuildArtifacts@1
   inputs:
     artifactName: drop
+    targetFolder: $(System.DefaultWorkingDirectory)
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     displayName: 'Publish Test Results'
