@@ -24,6 +24,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     artifactName: drop
-    targetFolder: $(System.DefaultWorkingDirectory)/dist/*
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    pathtoPublish: 'dist'
     displayName: 'Publish Artifacts'
